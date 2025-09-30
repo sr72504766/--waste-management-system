@@ -1,0 +1,170 @@
+/* General layout */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e6f9f0, #eef6ff, #f3e8ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+/* Modules */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.module-card {
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.module-card:hover {
+  transform: scale(1.05);
+}
+
+/* Gradients */
+.green-blue { background: linear-gradient(135deg, #16a34a, #2563eb); }
+.blue-purple { background: linear-gradient(135deg, #2563eb, #9333ea); }
+.green-purple { background: linear-gradient(135deg, #22c55e, #9333ea); }
+.blue-green { background: linear-gradient(135deg, #2563eb, #22c55e); }
+.purple-blue { background: linear-gradient(135deg, #9333ea, #2563eb); }
+.green-yellow { background: linear-gradient(135deg, #22c55e, #eab308); }
+.red-purple { background: linear-gradient(135deg, #ef4444, #9333ea); }
+
+/* Quick actions */
+.quick-actions {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.action-btn:hover {
+  background: #f0f9ff;
+}
+
+/* Activities */
+.activities-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.activities-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+  color: #555;
+}
+
+.activity-item .time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Active module view */
+.module-view {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin: 2rem 0;
+}
